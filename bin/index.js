@@ -14,4 +14,10 @@ program
         require('../lib/command/serve.js')();
     });
 
+program
+    .command('build')
+    .action(()=>{
+        require('../lib/command/build.js')();
+    });
+
 program.parse(process.argv);
