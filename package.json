@@ -1,6 +1,6 @@
 {
   "name": "@codercy1995/example-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command line interface for Vue.js",
   "license": "MIT",
   "author": "coderCy",
@@ -14,9 +14,6 @@
   "homepage": "https://github.com/Greency/example-cli#readme",
   "bin": {
     "example-cli": "./bin/index.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "vue"
