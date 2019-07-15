@@ -1,0 +1,31 @@
+{
+  "name": "@codercy1995/example-cli",
+  "version": "1.0.0",
+  "description": "Command line interface for Vue.js",
+  "license": "MIT",
+  "author": "coderCy",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Greency/example-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Greency/example-cli/issues"
+  },
+  "homepage": "https://github.com/Greency/example-cli#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "dependencies": {
+    "commander": "^2.20.0",
+    "execa": "^2.0.3",
+    "fs-extra": "^8.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.35.3",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
