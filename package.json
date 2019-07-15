@@ -12,6 +12,9 @@
     "url": "https://github.com/Greency/example-cli/issues"
   },
   "homepage": "https://github.com/Greency/example-cli#readme",
+  "bin": {
+    "example-cli": "./bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

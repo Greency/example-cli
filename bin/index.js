@@ -5,7 +5,7 @@ const program = require('commander');
 program
     .command('create <projectName>')
     .action((projectName) => {
-        require('../command/create.js');
+        require('../lib/command/create.js')(projectName);
     });
 
 program.parse(process.argv);
