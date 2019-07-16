@@ -16,14 +16,26 @@ program
 
 program
     .command('build')
-    .action(()=>{
+    .action(() => {
         require('../lib/command/build.js')();
     });
 
 program
+    .command('create-lib <projectName>')
+    .action((projectName) => {
+        require('../lib/command/createLib.js')(projectName);
+    });
+
+program
     .command('lib-entirety')
-    .action(()=>{
+    .action(() => {
         require('../lib/command/libEntirety')();
+    });
+
+program
+    .command('lib-each')
+    .action(()=>{
+        require('../lib/command/libEach.js')();
     });
 
 program.parse(process.argv);
