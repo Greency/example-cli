@@ -20,4 +20,10 @@ program
         require('../lib/command/build.js')();
     });
 
+program
+    .command('lib-entirety')
+    .action(()=>{
+        require('../lib/command/libEntirety')();
+    });
+
 program.parse(process.argv);
