@@ -15,27 +15,33 @@ program
     });
 
 program
-    .command('serve')
+    .command('serve-app')
     .action(() => {
-        require('../lib/command/execNode.js')('serve');
+        require('../lib/command/execNode.js')('serveApplication');
     });
 
 program
-    .command('build')
+    .command('serve-lib')
     .action(() => {
-        require('../lib/command/execNode.js')('build');
+        require('../lib/command/execNode.js')('serveLibrary');
     });
 
 program
-    .command('lib-entirety')
+    .command('build-app')
     .action(() => {
-        require('../lib/command/execNode.js')('libEntirety');
+        require('../lib/command/execNode.js')('buildApplication');
     });
 
 program
-    .command('lib-each')
+    .command('build-entire-lib')
     .action(() => {
-        require('../lib/command/execNode.js')('libEach');
+        require('../lib/command/execNode.js')('buildEntireLibrary');
+    });
+
+program
+    .command('build-each-lib')
+    .action(() => {
+        require('../lib/command/execNode.js')('buildEachLibrary');
     });
 
 program.parse(process.argv);
