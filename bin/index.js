@@ -5,37 +5,37 @@ const program = require('commander');
 program
     .command('create <projectName>')
     .action((projectName) => {
-        require('../lib/command/create.js')(projectName);
-    });
-
-program
-    .command('serve')
-    .action(() => {
-        require('../lib/command/serve.js')();
-    });
-
-program
-    .command('build')
-    .action(() => {
-        require('../lib/command/build.js')();
+        require('../lib/command/create.js')('application', projectName);
     });
 
 program
     .command('create-lib <projectName>')
     .action((projectName) => {
-        require('../lib/command/createLib.js')(projectName);
+        require('../lib/command/create.js')('library', projectName);
+    });
+
+program
+    .command('serve')
+    .action(() => {
+        require('../lib/command/execNode.js')('serve');
+    });
+
+program
+    .command('build')
+    .action(() => {
+        require('../lib/command/execNode.js')('build');
     });
 
 program
     .command('lib-entirety')
     .action(() => {
-        require('../lib/command/libEntirety')();
+        require('../lib/command/execNode.js')('libEntirety');
     });
 
 program
     .command('lib-each')
-    .action(()=>{
-        require('../lib/command/libEach.js')();
+    .action(() => {
+        require('../lib/command/execNode.js')('libEach');
     });
 
 program.parse(process.argv);
